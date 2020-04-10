@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: arch-test-svc
+  name: arch-app
 spec:
   selector:
     matchLabels:
@@ -13,7 +13,7 @@ spec:
         app: arch-app
     spec:
       containers:
-      - name: arch-app-container
+      - name: arch-app
         image: 000362764662.dkr.ecr.eu-north-1.amazonaws.com/arch-council/simple-svc:Latest
         ports:
-        - containerPort: 11011
+        - containerPort: 8080
