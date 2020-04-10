@@ -31,5 +31,7 @@ FROM scratch
 
 COPY --from=builder /dist/main /
 
+EXPOSE 8080/tcp
+
 # Command to run
 ENTRYPOINT ["/main"]

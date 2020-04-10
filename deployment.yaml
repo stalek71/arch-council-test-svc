@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: arch-app-container
-        image: 000362764662.dkr.ecr.eu-north-1.amazonaws.com/arch-council/simple-svc
+        image: 000362764662.dkr.ecr.eu-north-1.amazonaws.com/arch-council/simple-svc:Latest
         ports:
         - containerPort: 11011
