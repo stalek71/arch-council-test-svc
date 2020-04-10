@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: arch-test-svc
+spec:
+  selector:
+    matchLabels:
+      app: arch-app
+  replicas: 4
+  template:
+    metadata:
+      labels:
+        app: arch-app
+    spec:
+      containers:
+      - name: arch-app-container
+        image: 000362764662.dkr.ecr.eu-north-1.amazonaws.com/arch-council/simple-svc
+        ports:
+        - containerPort: 11011
