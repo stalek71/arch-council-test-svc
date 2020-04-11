@@ -7,6 +7,6 @@ spec:
     app: arch-app
   ports:
     - protocol: TCP
-      port: 11011
+      port: 80
       targetPort: 8080
   type: LoadBalancer
