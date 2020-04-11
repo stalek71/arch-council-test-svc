@@ -19,7 +19,7 @@ func makeUppercaseEndpoint(svc StringService) endpoint.Endpoint {
 		if err != nil {
 			return uppercaseResponse{v, hostName, err.Error()}, nil
 		}
-		return uppercaseResponse{v, hostName, ""}, nil
+		return uppercaseResponse{v, hostName, ""}, nil // Comment
 	}
 }
 
