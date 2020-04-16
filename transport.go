@@ -16,7 +16,7 @@ func makeUppercaseEndpoint(svc StringService) endpoint.Endpoint {
 		req := request.(uppercaseRequest)
 		v, err := svc.Uppercase(req.S)
 		hostName, _ := os.Hostname()
-		version := "0.1.1"
+		version := "0.1.2"
 		if err != nil {
 			return uppercaseResponse{v, hostName, version, err.Error()}, nil
 		}
